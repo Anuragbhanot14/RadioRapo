@@ -48,12 +48,14 @@ body{
     
 }
 .footer-logo{
- margin-top: 86px;
+ margin-top: 66px;
+    height: 30.89px;
+
 }
 .footer-right-logo{
     text-align: right;
     margin-top: -113px;
-    height: 145px;
+    height:  59.89px;
 }
 .verticalLine {
   border-left: 2px solid #ffffff85;
@@ -149,4 +151,12 @@ body{
 }
 .rect-ourstoty{
     cursor: pointer;
+}
+.rect-our{
+    margin-top: 8px;
+}
+.Group{
+    width:21px;
+    height:  20px;
+    margin-top: 131px;
 }
