@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="NicoRadio-2css.css">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="row header-logo">
+            <div class="col-md-1">
+                <img src="img\Group 274.svg" width="47.37px" ; height="auto">
+            </div>
+            <div class="col-md-2 nicoRadio-head">
+                <img src="img\Group 2.svg" width="173.86px" ;height="auto">
+            </div>
+            <div class="col-md-2 col-md-offset-7">
+                <div class="ractangler-border rect-upper"></div>
+                <p class="Rectangle-head">ARCHIVE MIX</p>
+                <div class="ractangler-border rect-lower"></div>
+
+            </div>
+        </div>
+        <div class="section-border"></div>
+
+        <div class="row">
+            <div class="col-md-5">
+                <section class="rect-box col-md-offset-5">
+                    <div class="row">
+                        <div class="col-md-10">
+                            <div class="col-md-7" style="margin-top: 8px">
+                                <span id="OURCURATOR" onclick="contentChange2();">OUR CURATOR</span>
+                                <div id="rect-box-border" class="rect-box-border"></div>
+                            </div>
+                            <div class="col-md-5" style="margin-top: 8px">
+                                <span id="STORY" onclick="contentChange();">STORY</span>
+                                <div id="rect-box-border1" class="rect-box-border1"></div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="row">
+                        <div class="col-md-offset-2">
+                            <img src="img\download.png" alt="img\Group 268" style=" border-radius: 50%;widows:73px;height:73px;">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 col-md-offset-1">
+                            <p style="padding-top: 10px;padding-left: 9px;">ANUSHKA SHANKAR</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-11">
+                            <div class="col-md-10 col-md-offset-1">
+                                <p class="rect-Text" id="rect-Text">Archive Mix is simply dummy text of the printing
+                                    and typesetting industry. Mix is
+                                    simply dummy text
+                                    of the printing and
+                                    typesetting industry. Archive Mix is simply dummy text of the printing and
+                                    typesetting industry.
+                                    KNOW MORE
+                                </p>
+
+                                <a href="#" style="color: white">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Block-line"></div>
+
+                    <img src="img\Group 268.svg" style="width: 118px; height: 17px; ">
+                </section>
+            </div>
+
+            <div class="col-md-5">
+
+                <div class="row">
+
+                    <div class="col-md-4 rect-box2">
+
+                        <div class="row ">
+                            <div class="col-md-6">
+                                <p>Sabha Sultan Forest</p>
+                            </div>
+                        </div>
+                        <div class="row rect-play">
+                            <div class="col-md-1 logo-left">
+                                <img src="img\Group 278.svg" style="width:12px; height: 20px; ">
+                            </div>
+                            <div class="col-md-5">
+                                <p>Anoushka Shankar Ocean</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <p>Kavya Trehan Dawn</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+        <div class="section-border2"></div>
+    </div>
+    <footer class="footer-logo">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2">
+                    <img src="img\XMLID_2_.svg" width="129.88px" ;height="auto">
+                </div>
+                <div class="col-md-1 verticalLine">
+
+                </div>
+                <div class="col-md-1 fbLogo">
+                    <img src="img\Group 268.svg" style="width:56.69px;height: 20.28px; ">
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+    <div class="footer-right-logo">
+        <img src="img\Group 269.svg" width="139.17px">
+    </div>
+    <script language="javascript" type="text/javascript">
+
+        function contentChange() {
+            document.getElementById("rect-Text").innerHTML = "Testing Story";
+            x = document.getElementById("STORY").nextElementSibling;
+            x.style.border = "2px solid white";
+            b = document.getElementById("rect-box-border");
+            b.style.border = "0.6px solid #ffffff7a ";
+            console.log(b);
+        }
+
+        function contentChange2() {
+            document.getElementById("rect-Text").innerHTML = "Archive Mix is simply dummy text of the printing and typesetting industry. Mix is simply dummy text of the printing and typesetting industry. Archive Mix is simply dummy text of the printing and typesetting industry. KNOW MORE";
+            x = document.getElementById("OURCURATOR").nextElementSibling;
+            x.style.border = "2px solid white";
+            console.log(x);
+            c = document.getElementById("rect-box-border1");
+            c.style.border = "";
+
+        }
+
+    </script>
+</body>
+
+</html>
