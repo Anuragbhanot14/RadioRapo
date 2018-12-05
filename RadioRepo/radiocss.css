@@ -50,8 +50,9 @@ body{
     
 }
 .footer-logo{
- margin-top: 66px;
-    height: 30.89px;
+position: fixed;
+    bottom: 45px;
+    width: 100%;
 
 }
 .footer-right-logo{
