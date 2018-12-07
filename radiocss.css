@@ -1,19 +1,19 @@
-body{
-    background: url("img/BG_1.JPG") no-repeat center center fixed;
+/* body{
+     background: url("img/BG_1.JPG") no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    background-size: cover;
+     background-size: cover;
     
 }
-.header-logo{
+.header{
         margin-top: 58PX;
 }
-.nicoRadio-head{
+.header-logo{
     margin-left: -37px;
     top: 17px;
 }
-.Rectangle-head{
+.header_text{
     background-color: #FFFFFF; 
     border: 1px solid white;
     padding: 3px 32px;
@@ -24,58 +24,55 @@ body{
     display: inline-block;
 
 }
-.ractangler-border{
-      border: 1px solid white;
-}
-
-.rect-upper{
+.header_text-border{
     padding: 17px 6px;
     width: 200px;
     margin-left: -6px;
     margin-bottom: -27px;
-}
+    border: 1px solid white;
 
-.rect-lower {
+} */
+/* .header_text-borderupper {
     padding: 17px 6px;
     width: 207px;
     margin-top: -38px;
     box-shadow: 0px 0.5px #000000;
-}
-.rect-box{
+    border: 1px solid white;
+} */
+/* .playinfo{
     margin-top: 71px;
      width: 280px;
      height: 360px;
     background-color: #4A4A4A;
     color: #FFFFFF;    
-    
-}
-.footer-logo{
+} */
+/* .footer{
 position: fixed;
     bottom: 45px;
     width: 100%;
 
-}
-.footer-right-logo{
+} */
+/* .footer_logo-right{
     text-align: right;
     margin-top: -113px;
     height:  59.89px;
-}
-.verticalLine {
+} */
+/* .footer_logo-verticalLine {
   border-left: 2px solid #ffffff85;
   height: 41.5px;
   width: 1px;
   margin-left: -24px;
   margin-top: -12px;
-}
-.section-border{
+} */
+/* .playinfo-border{
     border: 2px solid #ffffff7a;
     padding: 178px 7px;
     width: 280px;
     display: inline-block;
     margin-bottom: -450px;
     margin-left: 201px;
-}
-.rect-box2{
+} */
+/* .play{
     color: white;
     background-color: #3f3f3fd1;
     width: 474px;
@@ -85,21 +82,17 @@ position: fixed;
     line-height: 40px;   
     height: 140px;
     cursor: pointer;
-}
-.section-border2{
+} */
+/* .play-border{
     margin-top: -218px;
     border: 2px solid #ffffff96;
     padding: 68px 7px;
     width: 472px;
-    /* display: inline-block; */
-    /* margin-bottom: -550px; */
     margin-left: 501px;
     position: absolute;
-    /* left: 0px; */
-    /* top: 0px; */
     z-index: -1;
-}
-.rect-play{
+} */
+/* .play-background{
     position: inherit;
     z-index: -1;
     background-color: #4C4C4C;
@@ -107,8 +100,8 @@ position: fixed;
     z-index: 1;
     
     
-}
-.rect-Text{
+} */
+/* .playinfo-text{
        font-family: Euclid Flex;
     font-size: 10px;
     height: 94px;
@@ -116,50 +109,63 @@ position: fixed;
     width: 215px;
     text-align: left;
     color: white;
-}
-.Block-line{
+} */
+/* .playinfo_footer-horizontalline{
  margin-top: 20px;
   margin-bottom: 10px;
   border: 0;
   border-top: 2px solid #eeeeee8f;
-}
-.rect-box-border1{
+} */
+/* .playinfo_nav-righthorizontalline{
     border-bottom: 1.6px solid #ffffff96;
     margin: 11px -15px 17px;
     width: 146px;
-}
-.rect-box-border{
+} */
+/* .playinfo_nav-lefthorizontalline{
     border-bottom: 5px solid white;
     margin: 11px -15px 17px;
     width: 146px;
-}
-.fbLogo{
+} */
+/* .playinfo_profile{
+    border-radius: 50%;
+    widows:73px;
+    height:73px;
+} */
+/* .playinfo_profile-text{
+    padding-top: 10px;
+    padding-left: 9px;
+} */
+/* .footer_logo-fb{
     margin-left: -13px;
-}
-#OURCURATOR{
+} */
+/* .playinfo_nav-left{
     font-size: 10px; font-family: Euclid Flex;color: #ffffffb8;
-}
-#STORY{
+} */
+/* .playinfo_nav-right{
     cursor: pointer;font-size: 10px; font-family: Euclid Flex;padding-left: 50px;color: #ffffffb8;
-}
-.logo-left{
+} */
+/* .play_logo-pause{
      left: 10px;
-}
-.Play-Text{
+} */
+/* .play_text{
     font-size: 8px;
     width:  66px;
     height:  10px;
     font-family: Euclid Flex;
     text-align: right;
-}
-.rect-ourstoty{
+} */
+/* .playinfo_nav{
     cursor: pointer;
 }
-.rect-our{
+.playinfo_nav-text{
     margin-top: 8px;
-}
-.Group{
+} */
+/* .play_logo{
     width:21px;
     height:  20px;
     margin-top: 131px;
-}
+} */
+/* .footer_logo{
+    width:56.69px;
+    height: 20.28px; 
+} */
