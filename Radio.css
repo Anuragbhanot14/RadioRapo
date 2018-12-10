@@ -9,9 +9,17 @@ body {
 .header {
   margin-top: 58px;
 }
-.header-logo {
+.header_logo {
   margin-left: -37px;
   top: 17px;
+}
+.header_logo-nico {
+  width: 173.86px;
+  height: auto;
+}
+.header_logo-right {
+  width: 47.37px;
+  height: auto;
 }
 .header_text {
   background-color: #ffffff;
@@ -71,6 +79,10 @@ body {
   text-align: left;
   color: white;
 }
+.playinfo_footer-fblogo {
+  width: 118px;
+  height: 17px;
+}
 .playinfo_footer-horizontalline {
   margin-top: 20px;
   margin-bottom: 10px;
@@ -110,6 +122,9 @@ body {
   margin: 11px -15px 17px;
   width: 146px;
 }
+.playinfo-block {
+  height: 126px;
+}
 
 .play {
   color: white;
@@ -141,6 +156,20 @@ body {
   height: 20px;
   margin-top: 131px;
 }
+.play_logo-top {
+  width: 12px;
+  height: 20px;
+  display: none;
+}
+.play_logo-middle {
+  width: 12px;
+  height: 20px;
+}
+.play_logo-bottom {
+  width: 12px;
+  height: 20px;
+  display: none;
+}
 .play-border {
   margin-top: -218px;
   border: 2px solid #ffffff96;
@@ -156,9 +185,16 @@ body {
   bottom: 45px;
   width: 100%;
 }
+.footer-logo {
+  width: 139.17px;
+}
 .footer_logo {
   width: 56.69px;
   height: 20.28px;
+}
+.footer_logo-nico {
+  width: 129.88px;
+  height: auto;
 }
 .footer_logo-pause {
   left: 10px;

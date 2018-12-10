@@ -9,9 +9,17 @@ body {
 
 .header {
   margin-top: 58px;
-  &-logo {
+  &_logo {
     margin-left: -37px;
     top: 17px;
+    &-nico{
+      width:173.86px;
+      height:auto;
+    }
+    &-right{
+      width:47.37px;
+       height:auto;
+    }
   }
   &_text {
     background-color: #ffffff;
@@ -71,11 +79,17 @@ body {
     text-align: left;
     color: white;
   }
-  &_footer-horizontalline {
+  &_footer{
+    &-fblogo{
+      width: 118px;
+       height: 17px; 
+    }
+  &-horizontalline {
     margin-top: 20px;
     margin-bottom: 10px;
     border: 0;
     border-top: 2px solid #eeeeee8f;
+  }
   }
   &_nav {
     cursor: pointer;
@@ -110,6 +124,9 @@ body {
       }
     }
   }
+  &-block{
+    height:126px ;
+  }
 }
 
 .play {
@@ -140,6 +157,20 @@ body {
     width: 21px;
     height: 20px;
     margin-top: 131px;
+    &-top{
+       width:12px; 
+       height: 20px;
+        display: none; 
+    }
+    &-middle{
+      width:12px;
+       height: 20px;
+    }
+    &-bottom{
+      width:12px;
+       height: 20px;
+       display: none; 
+    }
   }
   &-border {
     margin-top: -218px;
@@ -156,9 +187,16 @@ body {
   position: fixed;
   bottom: 45px;
   width: 100%;
+  &-logo{
+  width:139.17px;
+  }
   &_logo {
     width: 56.69px;
     height: 20.28px;
+    &-nico{
+       width:129.88px;
+       height:auto;
+    }
     &-pause {
       left: 10px;
     }

@@ -17,10 +17,10 @@
     <div class="container">
         <div class="row header">
             <div class="col-md-1">
-                <img src="img\Group 274.svg" width="47.37px" ; height="auto">
+                <img src="img\Group 274.svg" class="header_logo-right">
             </div>
-            <div class="col-md-2 header-logo">
-                <img src="img\Group 2.svg" width="173.86px" ;height="auto">
+            <div class="col-md-2 header_logo">
+                <img src="img\Group 2.svg" class="header_logo-nico" >
             </div>
             <div class="col-md-2 col-md-offset-7">
                 <div class="header_text-border"></div>
@@ -36,13 +36,13 @@
                 <section class="playinfo col-md-offset-5">
                     <div class="row">
                         <div class="col-md-10 playinfo_nav">
-                            <div class="col-md-7 playinfo_nav-text" onclick="contentChange2();">
+                            <div class="col-md-7 playinfo_nav-text" id="contentChange_ourcurator" onclick="contentChange(this.id)">
                                 <span id="OURCURATOR" class="playinfo_nav-left">OUR CURATOR</span>
-                                <div id="rect-box-border" class="playinfo_nav-lefthorizontalline"></div>
+                                <div id="playinfo_lefthorizontalline" class="playinfo_nav-lefthorizontalline"></div>
                             </div>
-                            <div class="col-md-5 playinfo_nav-text" onclick="contentChange();">
+                            <div class="col-md-5 playinfo_nav-text" id="contentChange_story" onclick="contentChange(this.id)">
                                 <span id="STORY" class="playinfo_nav-right">STORY</span>
-                                <div id="rect-box-border1" class="playinfo_nav-righthorizontalline"></div>
+                                <div id="playinfo_righthorizontalline" class="playinfo_nav-righthorizontalline"></div>
                             </div>
                         </div>
                     </div>
@@ -58,8 +58,8 @@
                     </div>
                     <div class="row">
                         <div class="col-md-11">
-                            <div class="col-md-10 col-md-offset-1">
-                                <p class="playinfo-text" id="rect-Text">
+                            <div class="col-md-10 col-md-offset-1 playinfo-block">
+                                <p class="playinfo-text" id="playinfo-Text">
                                     Archive Mix is simply dummy text of the printing and
                                     typesetting industry. Mix is simply dummy text of the printing and
                                     typesetting industry. Archive Mix is simply dummy text of the printing and
@@ -72,7 +72,7 @@
                     </div>
                     <div class="playinfo_footer-horizontalline"></div>
 
-                    <img src="img\Group 268.svg" style="width: 118px; height: 17px; ">
+                    <img src="img\Group 268.svg" class="playinfo_footer-fblogo">
                 </section>
             </div>
 
@@ -90,7 +90,7 @@
                         <div class="row" id="play1" onclick="Play(this.id)">
 
                             <div class="col-md-1 play_logo-pause" id=" logo-left">
-                                <img src="img\Group 278.svg" id="logoplay1" style="width:12px; height: 20px; display: none; ">
+                                <img src="img\Group 278.svg" id="logoplay1" class="play_logo-top">
                             </div>
                             <div class="col-md-5">
                                 <p>Sabha Sultan Forest</p>
@@ -101,7 +101,7 @@
                         </div>
                         <div class="row play-background" id="play2" onclick="Play(this.id)">
                             <div class="col-md-1 play_logo-pause" id=" logo-left">
-                                <img src="img\Group 278.svg" id="logoplay2" style="width:12px; height: 20px;">
+                                <img src="img\Group 278.svg" id="logoplay2" class="play_logo-middle">
                             </div>
                             <div class="col-md-6">
 
@@ -113,7 +113,7 @@
                         </div>
                         <div class="row" id="play3" onclick="Play(this.id)">
                             <div class="col-md-1 play_logo-pause" id=" logo-left">
-                                <img src="img\Group 278.svg" id="logoplay3" style="width:12px; height: 20px; display: none; ">
+                                <img src="img\Group 278.svg" id="logoplay3" class="play_logo-bottom">
                             </div>
                             <div class="col-md-5">
                                 <p>Kavya Trehan Dawn</p>
@@ -140,7 +140,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                    <img src="img\XMLID_2_.svg" width="129.88px" ;height="auto">
+                    <img src="img\XMLID_2_.svg" class="footer_logo-nico">
                 </div>
                 <div class="col-md-1 footer_logo-verticalLine">
 
@@ -151,34 +151,35 @@
             </div>
         </div>
         <div class="footer_logo-right">
-            <img src="img\Group 269.svg" width="139.17px">
+            <img src="img\Group 269.svg" class="footer-logo">
         </div>
 
     </footer>
 <script language="javascript" type="text/javascript">
     window.localStorage.setItem("pre", "play2");
 
-     function contentChange() {
-         document.getElementById("rect-Text").style.display ="none";
-         document.getElementById("rect-Text2").style.display ="block";
-         story = document.getElementById("STORY").nextElementSibling;
-         story.style.border = "2px solid white";
-         box = document.getElementById("rect-box-border");
-         box.style.border = "0.6px solid #ffffff96";
-        
+     function contentChange(click_id) {
+        content=document.getElementById(click_id).attributes.id;
+    if(content.nodeValue==="contentChange_ourcurator")
+    {
+        document.getElementById("playinfo-Text").style.display = "block";
+        document.getElementById("playinfo-Text").style.display = "block";
+        OURCURATOR = document.getElementById("OURCURATOR").nextElementSibling;
+        OURCURATOR.style.border = "2px solid white";
+        border = document.getElementById("playinfo_righthorizontalline");
+        border.style.border = "";
+    }            
+       else{
+
+         document.getElementById("playinfo-Text").style.display = "none";
+        document.getElementById("playinfo-Text").style.display = "none";
+        story = document.getElementById("STORY").nextElementSibling;
+        story.style.border = "2px solid white";
+        box = document.getElementById("playinfo_lefthorizontalline");
+        box.style.border = "0.6px solid #ffffff96";
+
+       }
      }
-   function contentChange2() {
-        document.getElementById("rect-Text").style.display="block";
-        document.getElementById("rect-Text2").style.display = "none";
-         OURCURATOR = document.getElementById("OURCURATOR").nextElementSibling;
-         OURCURATOR.style.border = "2px solid white";
-         border = document.getElementById("rect-box-border1");
-         border.style.border = "";
-     }
-
-
-
-
     function Play(clicked_id) {
 
         console.log(localStorage.getItem("pre"));
