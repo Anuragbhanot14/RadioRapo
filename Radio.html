@@ -17,18 +17,18 @@
     <div class="container">
         <div class="row header">
             <div class="col-md-1">
-                <img src="img\Group 274.svg" class="header_logo-right">
+                <img src="img\Group 274.svg" class="header_right--logo">
             </div>
-            <div class="col-md-2 header_logo">
-                <img src="img\Group 2.svg" class="header_logo-nico" >
+            <div class="col-md-2 header_left">
+                <img src="img\Group 2.svg" class="header_left--logo">
             </div>
             <div class="col-md-2 col-md-offset-7">
-                <div class="header_text-border"></div>
+                <div class="header_border--lower"></div>
                 <p class="header_text">ARCHIVE MIX</p>
-                <div class=" header_text-borderupper"></div>
+                <div class="header_border--upper"></div>
             </div>
         </div>
-    
+
         <div class="playinfo-border"></div>
 
         <div class="row">
@@ -123,86 +123,70 @@
                             </div>
                         </div>
                     </div>
-
-
                 </div>
-
-
             </div>
-
         </div>
-    
         <div class="play-border"></div>
-
-
     </div>
     <footer class="footer">
         <div class="container">
             <div class="row">
                 <div class="col-md-2">
-                    <img src="img\XMLID_2_.svg" class="footer_logo-nico">
+                    <img src="img\XMLID_2_.svg" class="footer_nicobar--logo">
                 </div>
-                <div class="col-md-1 footer_logo-verticalLine">
-
-                </div>
-                <div class="col-md-1 footer_logo-fb">
-                    <img src="img\Group 268.svg" class="footer_logo">
+                <div class="col-md-1 footer--verticalLine"> </div>
+                <div class="col-md-1 footer_fb">
+                    <img src="img\Group 268.svg" class="footer_fb--logo">
                 </div>
             </div>
         </div>
-        <div class="footer_logo-right">
-            <img src="img\Group 269.svg" class="footer-logo">
+        <div class="footer_right">
+            <img src="img\Group 269.svg" class="footer-logo footer_right--logo">
         </div>
-
     </footer>
-<script language="javascript" type="text/javascript">
-    window.localStorage.setItem("pre", "play2");
-
-     function contentChange(click_id) {
-        content=document.getElementById(click_id).attributes.id;
-    if(content.nodeValue==="contentChange_ourcurator")
-    {
-        document.getElementById("playinfo-Text").style.display = "block";
-        document.getElementById("playinfo-Text").style.display = "block";
-        OURCURATOR = document.getElementById("OURCURATOR").nextElementSibling;
-        OURCURATOR.style.border = "2px solid white";
-        border = document.getElementById("playinfo_righthorizontalline");
-        border.style.border = "";
-    }            
-       else{
-
-         document.getElementById("playinfo-Text").style.display = "none";
-        document.getElementById("playinfo-Text").style.display = "none";
-        story = document.getElementById("STORY").nextElementSibling;
-        story.style.border = "2px solid white";
-        box = document.getElementById("playinfo_lefthorizontalline");
-        box.style.border = "0.6px solid #ffffff96";
-
-       }
-     }
-    function Play(clicked_id) {
-
-        console.log(localStorage.getItem("pre"));
-        var Pre = localStorage.getItem("pre");
-        var element = document.getElementById(Pre);
-        element.classList.remove("play-background");
-       var currentId = document.getElementById(clicked_id);
-        var element = document.getElementById('play2');
-        element.classList.remove("play-background");
-        if (clicked_id !== Pre) {
-            document.getElementById("logo" + clicked_id).style.display = "inline";
-            document.getElementById("logo" + Pre).style.display = "none";
-            console.log(document.getElementById("Play-Text" + clicked_id));
-            document.getElementById("Play-Textplay1").innerHTML = "NEXT";
-            document.getElementById("Play-Textplay2").innerHTML = "NEXT";
-            document.getElementById("Play-Textplay3").innerHTML = "NEXT";
-            document.getElementById("Play-Text" + clicked_id).innerHTML = "NOW PLAYING";
-            document.getElementById("Play-Text" + Pre).innerHTML = "PREVIOUS";
+    <script language="javascript" type="text/javascript">
+        window.localStorage.setItem("pre", "play2");
+        function contentChange(click_id) {
+            content = document.getElementById(click_id).attributes.id;
+            if (content.nodeValue === "contentChange_ourcurator") {
+                document.getElementById("playinfo-Text").style.display = "block";
+                document.getElementById("playinfo-Text").style.display = "block";
+                OURCURATOR = document.getElementById("OURCURATOR").nextElementSibling;
+                OURCURATOR.style.border = "2px solid white";
+                border = document.getElementById("playinfo_righthorizontalline");
+                border.style.border = "";
+            }
+            else {
+                document.getElementById("playinfo-Text").style.display = "none";
+                document.getElementById("playinfo-Text").style.display = "none";
+                story = document.getElementById("STORY").nextElementSibling;
+                story.style.border = "2px solid white";
+                box = document.getElementById("playinfo_lefthorizontalline");
+                box.style.border = "0.6px solid #ffffff96";
+            }
         }
-        currentId.classList.add("play-background");
-        return window.localStorage.setItem("pre", clicked_id);
-    }
-</script>
+        function Play(clicked_id) {
+            console.log(localStorage.getItem("pre"));
+            var Pre = localStorage.getItem("pre");
+            var element = document.getElementById(Pre);
+            element.classList.remove("play-background");
+            var currentId = document.getElementById(clicked_id);
+            var element = document.getElementById('play2');
+            element.classList.remove("play-background");
+            if (clicked_id !== Pre) {
+                document.getElementById("logo" + clicked_id).style.display = "inline";
+                document.getElementById("logo" + Pre).style.display = "none";
+                console.log(document.getElementById("Play-Text" + clicked_id));
+                document.getElementById("Play-Textplay1").innerHTML = "NEXT";
+                document.getElementById("Play-Textplay2").innerHTML = "NEXT";
+                document.getElementById("Play-Textplay3").innerHTML = "NEXT";
+                document.getElementById("Play-Text" + clicked_id).innerHTML = "NOW PLAYING";
+                document.getElementById("Play-Text" + Pre).innerHTML = "PREVIOUS";
+            }
+            currentId.classList.add("play-background");
+            return window.localStorage.setItem("pre", clicked_id);
+        }
+    </script>
 </body>
 
 </html>
